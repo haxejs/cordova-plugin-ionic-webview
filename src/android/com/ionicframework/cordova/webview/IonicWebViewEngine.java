@@ -44,6 +44,15 @@ public class IonicWebViewEngine extends SystemWebViewEngine {
     Log.d(TAG, "Ionic Web View Engine Starting Right Up 3...");
   }
 
+  //Is it useful? https://github.com/ionic-team/cordova-plugin-ionic-webview/issues/143
+  // @Override
+  // public void loadUrl(String url, boolean clearNavigationStack) {
+  //   if (!url.startsWith("file:///android_asset/")) {
+  //       url = url.replace("file:", CDV_LOCAL_SERVER + "/_file_");
+  //   }
+  //   super.loadUrl(url, clearNavigationStack);
+  // }
+
   @Override
   public void init(CordovaWebView parentWebView, CordovaInterface cordova, final CordovaWebViewEngine.Client client,
                    CordovaResourceApi resourceApi, PluginManager pluginManager,
